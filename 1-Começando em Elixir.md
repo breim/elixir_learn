@@ -211,5 +211,42 @@ Duas listas podem ser concatenadas ou subtraidas utlizando os operadores ++ ou -
 	iex(2)> [1, 2, 3, 4] -- [1, 2, 3]
 	[4]
 
+#### Tuples
+Assim como as listas eles podem conter valores de qualquer tipo e são colocados dentro de chaves. Em outras liguagems como o ruby são parecidos com hashes.
+
+	iex(1)> {"nome", "Henrique"}
+	{"nome", "Henrique"}
+	
+Podemos criar uma variável a partir do tuple
+
+	iex(2)> pessoa = {"nome", "Henrique"}
+	{"nome", "Henrique"}
+
+A partir da variável podemos acessar os seus valores a partir da função **elem**
+
+	iex(3)> elem(pessoa, 1)
+	"Henrique"
+	iex(4)> elem(pessoa, 0)
+	"nome"
+	
+Também podemos substituir valores a partir da função **put_elem**
+
+	iex(5)> pessoa = put_elem(pessoa, 1, "Breim")
+	{"nome", "Breim"}
+	
+Adicionando um novo valor ao tuple
+	
+	iex(6)> pessoa = Tuple.append(pessoa, "Novo valor")
+	{"nome", "Breim", "Novo valor"}
+
+Deletando um valor do tuple 
+
+	iex(7)> pessoa =  Tuple.delete_at(pessoa, 0)
+	{"Breim", "Novo valor"}
+
+Convertendo um tuple para uma lista
+
+	iex(8)> pessoa = Tuple.to_list(pessoa)
+	["Breim", "Novo valor"]
 
 
