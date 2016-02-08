@@ -124,7 +124,7 @@ Podem ser exibidas utilizando a função ``IO.puts`` do módulo IO:
 	mundo
 	:ok
 	
-Conseguimos utilizar algumas funções do modulo String do Elixir
+Conseguimos utilizar algumas funções do modulo String do Elixir:
 
 	iex(1)> String.length("Ola mundo")
 	9
@@ -156,6 +156,34 @@ O senhor tem R$25,50 ? basta colocar um ponto "."
 	25.5
 	iex(3)> 29.923
 	29.923
+
+
+#### Convertendo tipos de dados
+
+##### String para integer
+
+	iex(1)> String.to_integer("100")
+	100
+
+##### String para float
+
+	iex(9)> String.to_float("25.10")
+	25.1
+
+##### Integer para String
+
+	iex(1)> Integer.to_string(20)
+	"20"
+	
+##### Float para string
+
+	iex(24)> Float.to_string(20.1)
+	"2.01000000000000014211e+01"
+	
+Somos obrigados a informar a quantidade de casas pois podemos receber valores estranhos conforme o exemplo anterior.
+
+	iex(1)> Float.to_string 20.1, [decimals: 2, compact: true]
+	"20.1"
 
 
 
