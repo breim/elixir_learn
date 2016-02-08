@@ -184,6 +184,13 @@ Somos obrigados a informar a quantidade de casas pois podemos receber valores es
 
 	iex(1)> Float.to_string 20.1, [decimals: 2, compact: true]
 	"20.1"
+	
+#### Atom
+São constantes, onde seu nome é o seu próprio valor. Outras linguagems como Ruby são conhecidos como símbolos.
+Podemos declarar os atoms da seguinte maneira  **:cidade, :estado, :rua**<br/>
+Iremos ver diversos exemplos mais a frente de como utilizar os atoms.
+
+
 
 
 
