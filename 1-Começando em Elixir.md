@@ -145,12 +145,17 @@ Conseguimos utilizar algumas funções do modulo String do Elixir
 	iex(9)> String.replace("a,b,c", ",", "-")
 	"a-b-c"
 
+#### Floats
 
+São números com ponto flutuante.<br/>
+O senhor tem R$25,50 ? basta colocar um ponto "."
 
-
-
-
-
+	iex(1)> 100.20
+	100.2  
+	iex(2)> 25.50
+	25.5
+	iex(3)> 29.923
+	29.923
 
 
 
