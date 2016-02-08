@@ -71,7 +71,7 @@ Uma das melhores maneiras de começar é usando nosso terminal como uma calculad
 	16
 
 ### Tipos básicos de dados
-Temos o suporte a boolean, integer, float, atom, symbol, strings, listas e tuple.
+Temos o suporte a **boolean**, **integer**, **float**, **atom**, **symbol**, **strings**, **listas** e **tuple**.
 
 #### Boolean
 São valores considerados como ``true`` e ``false`` <em>verdadeiro ou falso</em> podendo ser respresentados da seguinte forma em nosso iex: 
