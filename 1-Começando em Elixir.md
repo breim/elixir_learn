@@ -71,7 +71,7 @@ Uma das melhores maneiras de começar é usando nosso terminal como uma calculad
 	16
 
 ### Tipos básicos de dados
-Temos o suporte a **boolean**, **integer**, **float**, **atom**, **symbol**, **strings**, **listas** e **tuple**.
+Temos o suporte a **boolean**, **integer**, **float**, **atom**, **strings**, **listas** e **tuple**.
 
 #### Boolean
 São valores considerados como ``true`` e ``false`` <em>verdadeiro ou falso</em> podendo ser respresentados da seguinte forma em nosso iex: 
@@ -191,6 +191,25 @@ Podemos declarar os atoms da seguinte maneira  **:cidade, :estado, :rua**<br/>
 Iremos ver diversos exemplos mais a frente de como utilizar os atoms.
 
 
+#### Listas
+São valores de qualquer tipo(integer, float, booleans, etc) dispostos dentro de colchetes
+
+	iex(1)> ["Avenida Paulista", 20, true]   
+	["Avenida Paulista", 20, true]
+
+Podemos ver o total de itens na lista utilizando a função lenght
+
+	iex(1)> length ["Avenida Paulista", 20, true]
+	3
+
+Duas listas podem ser concatenadas ou subtraidas utlizando os operadores ++ ou --
+	
+
+	iex(1)> [1, 2, 3] ++ [1, 2, 3]
+	[1, 2, 3, 1, 2, 3]
+	
+	iex(2)> [1, 2, 3, 4] -- [1, 2, 3]
+	[4]
 
 
 
