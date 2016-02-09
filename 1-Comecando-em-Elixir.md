@@ -144,6 +144,16 @@ Conseguimos utilizar algumas funções do modulo String do Elixir:
 	"Ola Ola Ola Ola Ola Ola Ola Ola Ola Ola "
 	iex(9)> String.replace("a,b,c", ",", "-")
 	"a-b-c"
+	
+Concatenando strings basta utilizar o operador **<>**
+
+	iex(1)> nome = "Henrique"
+	"Henrique"
+	iex(2)> sobrenome = " Breim"
+	" Breim"
+	iex(3)> nome <> sobrenome
+	"Henrique Breim"
+
 
 #### Floats
 
