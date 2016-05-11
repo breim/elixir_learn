@@ -260,3 +260,13 @@ Convertendo um tuple para uma lista
 	["Breim", "Novo valor"]
 
 
+
+#### Delimitadores
+
+Tabém podemos declarar variáveis utilizando o delimitador ponto e virgula (;).
+
+	iex(0)> a = 5; b = 20
+	20
+	iex(1)> a+b
+	25
+	
